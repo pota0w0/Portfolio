@@ -1,0 +1,224 @@
+/* 한솥도시락 - 최소사이즈 1200 => 좌우 여백 15px => 컨텐츠 실제 사이즈 : 1170px */
+
+/* 컨텐츠 공통 - 기기장치(사이즈) 상관없이 공통으로 작성할 CSS */
+/* mslider */
+.mslider{ width: 100%; overflow: hidden; }
+.mslider .flex-control-nav{
+    width: 162px; height: 4px;
+    position: absolute; left: 0; bottom: 50px; z-index: 100;
+}
+.mslider .flex-control-nav li{ margin: 0 2px; }
+.mslider .flex-control-paging li a{
+    width: 50px; height: 4px;
+    background-color: #cfc6bc; border-radius: 0;
+    box-shadow: none;
+}
+.mslider .flex-control-paging li a.flex-active{ background-color: #f6ca00; }
+.mslider .flex-pauseplay a{
+    width: 30px; height: 30px;
+    text-indent: -999em; /* font처리 - 화면에서 안보이게 처리 */
+    background-image: url(../images/icon/icon_play.png); 
+    background-size: 60px; /* 이미지가 2배여서 반으로 줄임 */
+    position: absolute; left: 170px; bottom: 37px;
+}
+.mslider .flex-pauseplay a.flex-play{ /* 플레이로 이미지 변경 */
+    background-position: -30px 0;
+}
+
+/* topBanner */
+.topBanner{ width: 100%; overflow: hidden; margin-bottom: 30px; }
+.topBanner img{ display: block; width: 100%; }
+.topBanner figcaption{ width: 100%; height: 180px; background-color: #eeecec; border-bottom: 5px solid #373737; padding: 30px; box-sizing: border-box; position: relative; }
+.topBanner figcaption:after{ content: ''; display: block; width: 100%; height: 5px; background-color: #f6ca00; position: absolute; bottom: -5px; left: 0; transform: scaleX(0); transition: 0.3s; }
+.topBanner a:hover figcaption:after{ transform: scaleX(1); }
+.topBanner p{ width: 100%; font-size: 20px; font-weight: bold; color: #373737; margin-bottom: 20px; }
+.topBanner .img{ display: inline-block; width: 30px; height: 30px; margin-right: 10px; text-indent: -999em; background-image: url(../images/icon/btn_link.png); background-size: 60px 30px; transition: 0.2s; }
+.topBanner a:hover .img{ background-position: -30px 0; }
+.topBanner .text{ font-size: 14px; font-weight: bold; position: relative; top: 6px; }
+
+/* franchise */
+.franchise{ width: 100%; overflow: hidden; margin-bottom: 30px; }
+.franchise img{ display: block; width: 100%; }
+.franchise figcaption{ width: 100%; height: 180px; background-color: #eeecec; border-bottom: 5px solid #373737; padding: 30px; box-sizing: border-box; position: relative; }
+.franchise figcaption:after{ content: ''; display: block; width: 100%; height: 5px; background-color: #f6ca00; position: absolute; bottom: -5px; left: 0; transform: scaleX(0); transition: 0.3s; }
+.franchise a:hover figcaption:after{ transform: scaleX(1); }
+.franchise p{ width: 100%; font-size: 20px; font-weight: bold; color: #373737; margin-bottom: 20px; }
+.franchise .img{ display: inline-block; width: 30px; height: 30px; margin-right: 10px; text-indent: -999em; background-image: url(../images/icon/btn_link.png); background-size: 60px 30px; transition: 0.2s; }
+.franchise a:hover .img{ background-position: -30px 0; }
+.franchise .text{ font-size: 14px; font-weight: bold; position: relative; top: 6px; }
+.franchise .titleWrap{ background-color: #f6ca00; padding: 50px 30px; box-sizing: border-box; }
+.franchise .title h3{ width: 100%; height: 115px; font-size: 28px; font-weight: 800; margin-bottom: 30px; background-image: url(../images/main/title_line.png); background-repeat: no-repeat; background-position: left bottom; }
+.franchise .title p{ font-size: 14px; line-height: 22px; }
+
+/* brand */
+.brand{ width: 100%; overflow: hidden; margin-bottom: 60px; }
+.brand .content{ width: 100%; overflow: hidden; padding: 60px 20px; box-sizing: border-box; background-color: rgba(50,50,50,0.8); }
+.brand h3{ width: 100%; height: 160px; margin-bottom: 20px; color: #fff; font-size: 28px; font-weight: 800; background-image: url(../images/main/title_line_white.png); background-repeat: no-repeat; background-position: left bottom; }
+.brand p{ font-size: 14px; color: #fff; line-height: 22px; margin-bottom: 150px; }
+.brand a{ padding: 15px 40px; border: 3px solid #fff; color: #fff; font-size: 16px; font-weight: bold; transition: 0.3s; }
+.brand a:hover{ background-color: #fff; color: #373737; }
+.brand .mobile{ display: none; }
+
+/* food */
+.food .foodText a{ display: block; width: 100%; background-color: #eeecec; padding: 30px; box-sizing: border-box; border-bottom: 5px solid #373737; position: relative; }
+.food .foodText a:after{ display: block; content: ''; width: 100%; height: 5px; background-color: #f6ca00; position: absolute; bottom: -5px; left: 0; transform: scaleX(0); transition: 0.3s; }
+.food .foodText a:hover:after{ transform: scaleX(1); }
+.food h3{ width: 100%; height: 160px; color: #373737; font-size: 28px; padding-top: 20px; margin-bottom: 20px; background-image: url(../images/main/title_line.png); background-repeat: no-repeat; background-position: left bottom; font-weight: 800; }
+.food p{ font-size: 14px; font-weight: bold; color: #373737; margin-bottom: 80px; text-align: justify; }
+.food .img{ display: inline-block; width: 30px; height: 30px; margin-right: 10px; text-indent: -999em; background-image: url(../images/icon/btn_link.png); background-size: 60px 30px; transition: 0.2s; }
+.food a:hover .img{ background-position: -30px 0; }
+.food .text{ font-size: 14px; font-weight: bold; position: relative; top: 6px; }
+
+
+
+/* pc */
+@media screen and (min-width: 1024px){
+    /* mslider */
+    .mslider{ margin-bottom: 60px; }
+    .mslider .flexslider .slides > li{ height: 650px; background-repeat: no-repeat; background-position: center; background-size: cover; }
+    .mslider .flexslider .slides > .ms01{ background-image: url(../images/main/main_web_slider01.jpg); }
+    .mslider .flexslider .slides > .ms02{ background-image: url(../images/main/main_web_slider02.jpg); }
+    .mslider .flexslider .slides > .ms03{ background-image: url(../images/main/main_web_slider03.jpg); }
+    .mslider .flexslider .slides .mobile{ display: none; }
+    .mslider .flexslider .slides .tablet{ display: none; }
+    .mslider .flex-control-nav{ left: 30px; }
+    .mslider .flex-pauseplay a{ left: 200px; }
+    
+    /* topBanner */
+    .topBanner{ margin-bottom: 60px; }
+    
+    /* franchise */
+    .franchise{ width: 100%; overflow: hidden; margin-bottom: 60px; }
+    .franchise figcaption{ padding: 30px 20px; }
+    .franchise p{ font-size: 18px; }
+    
+    /* brand */
+    .brand{ width: 100%; height: 600px; position: relative; }
+    .brandBg{ position: absolute; top: 0; left: 0; z-index: 20; width: 100%; height: 600px; background-image: url(../images/main/main_visual_02.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; transition: 0.7s ease; }
+    .brandBg:hover{ transform: scale(1.05); }
+    .brand .content{ width: 370px; height: 600px; position: absolute; top: 0; left: 0; z-index: 21; }
+    
+    /* food */
+    .food{ width: 1200px; max-width: 100%; height: 450px; margin-bottom: 60px; }
+    .food figure{ float: left; width: 800px; max-width: 67%; height: 450px; position: relative; overflow: hidden; background-image: url(../images/main/main_food.jpg); background-position: center; }
+    .food figure img{ display: none; }
+    .food .foodText{ float: left; width: 370px; max-width: 33%; height: 450px; }
+    .food .foodText a{ height: 450px; }
+
+    /* story */
+    .story{ width: 100%; overflow: hidden; margin-bottom: 95px; }
+    .story h3{ width: calc(100% - 30px); margin: 0 15px; height: 30px; background-image: url(../images/main/title_line2.png); background-repeat: repeat-x; background-position: left center; margin-bottom: 50px; }
+    .story h3 .title{ background-color: #fff; line-height: 30px; font-size: 24px; font-weight: 800; padding-right: 30px; }
+    .story li a{ display: block; width: 100%; overflow: hidden; }
+    .story li figure{ width: 100%; overflow: hidden; position: relative; }
+    .story li img{ display: block; width: 100%; }
+    .story li figcaption{ display: block; width: 100%; height: 60px; background-color: #373737; position: absolute; bottom: 0; padding: 15px 30px; box-sizing: border-box; }
+    .story li .title{ line-height: 30px; color: #fff; font-size: 14px; font-weight: bold; }
+    .story li .arrow{ display: block; width: 6px; height: 10px; background-image: url(../images/icon/icon_cont_more.png); background-repeat: no-repeat; background-size: 12px 10px; position: absolute; top: 25px; right: 30px; }
+    .story li a:hover .title{ color: #f6ca00; }
+    .story li a:hover .arrow{ background-position: -6px 0; }
+}
+
+/* large pc - 화면이 큰 해상도 처리 CSS */
+@media screen and (min-width: 1200px){
+    /* mslider */
+    .mslider .flex-control-nav{ left: calc(50% - 585px); }
+    .mslider .flex-pauseplay a{ left: calc(50% - 418px); }
+    
+    /* topBanner */
+    .topBanner{ width: 1200px; overflow: hidden; margin: 0 auto; margin-bottom: 60px; }
+    
+    /* franchise */
+    .franchise{ width: 1200px; overflow: hidden; margin: 0 auto; margin-bottom: 60px; }
+    
+    /* brand */
+    .brandWrap{ width: 1200px; height: 600px; margin: 0 auto; position: relative; }
+    .brandWrap .content{ left: 15px; }
+    
+    /* food */
+    .food{ width: 1200px; overflow: hidden; margin: 0 auto 60px; padding: 0 15px; box-sizing: border-box; }
+    .food figure{ float: left; width: 800px; max-width: 800px; height: 450px; }
+    .food .foodText{ float: left; width: 370px; max-width: 370px; height: 450px; }
+    
+    /* story */
+    .story{ width: 1200px; overflow: hidden; margin: 0 auto 95px; }
+}
+
+/* tablet과 mobile이 유사하지 않아서 따로 작성 */
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    /* mslider */
+    .mslider{ padding-top: 60px; margin-bottom: 30px; }
+    .mslider .flexslider .slides .mobile{ display: none; }
+    .mslider .flex-control-nav{ left: 30px; bottom: 25px;  }
+    .mslider .flex-pauseplay a{ left: 200px; bottom: 12px; }
+    
+    /* franchise */
+    .franchise{ padding: 30px 60px; box-sizing: border-box; }
+    .franchise .title{ float: none; width: 100%; margin: 0 auto 15px; }
+    
+    /* brand */
+    .brand{ width: 100%; padding: 35px 10px; box-sizing: border-box; margin-bottom: 30px; background-image: url(../images/main/main_visual_02.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; }
+    
+    /* food */
+    .food{ width: 100%; overflow: hidden; margin-bottom: 30px; padding: 30px 60px; box-sizing: border-box; }
+    .food figure{ width: 100%; overflow: hidden; }
+    .food figure img{ width: 100%; display: block; }
+    .food .foodText{ width: 100%; overflow: hidden; }
+    
+    /* story */
+    .story{ display: none; }
+}
+
+
+/* mobile */
+@media screen and (max-width: 767px){
+    /* mslider */
+    .mslider{ padding-top: 60px; margin-bottom: 30px; }
+    .mslider .flexslider .slides .tablet{ display: none; }
+    .mslider .flex-control-nav{ width: 100%; bottom: 20px; }
+    .mslider .flex-pauseplay a{ left: calc(50% + 85px); bottom: 7px; }
+    
+    /* topBanner */
+    .topBanner .first{ margin-bottom: 15px; }
+    
+    /* franchise */
+    .franchise .title{ float: none; padding-bottom: 150px; background-color: #f6ca00; }
+    .franchise ul{ margin-top: -120px; }
+    .franchise .first{ margin-bottom: 15px; }
+    
+    /* brand */
+    .brand{ width: 100%; padding: 35px 10px; box-sizing: border-box; margin-bottom: 30px; background-image: url(../images/main/main_visual_02.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; }
+    .brand p{ margin-bottom: 50px; }
+    .brand .common{ display: none; }
+    .brand .mobile{ display: block; text-align: justify; }
+    
+    /* food */
+    .food{ width: 100%; overflow: hidden; margin-bottom: 30px; padding: 0 15px; box-sizing: border-box; }
+    .food figure{ width: 100%; overflow: hidden; }
+    .food figure img{ width: 100%; display: block; }
+    .food .foodText{ width: 100%; overflow: hidden; }
+    .food h3{ padding-top: 0; }
+    .food p{ margin-bottom: 30px; }
+    
+    /* story */
+    .story{ display: none; }
+}
+
+
+/* iphone5와 SE */
+@media screen and (max-width: 320px){
+    /* topBanner */
+    .topBanner figcaption{ height: 150px; padding: 20px; }
+    .topBanner p{ font-size: 16px; }
+    
+    /* franchise */
+    .franchise figcaption{ height: 150px; padding: 20px; }
+    .franchise p{ font-size: 16px; }
+}
+
+
+
+
+
+

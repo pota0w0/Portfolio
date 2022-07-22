@@ -1,0 +1,37 @@
+/* 구글웹폰트도 사용은 가능하나, 공부차원에서 font-face방식으로 사용 */
+/* 서버에 폰트 올려서 직접적으로 사용 - @font-face */
+@font-face {/*국문*/
+    font-family:NotoSans;
+    font-weight:normal;
+    src:local(※), url(../font/NotoSansKR-Regular.woff) format('woff');
+}
+
+ @font-face {/*국문*/
+    font-family:NotoSans;
+    font-weight:bold;
+    src:local(※), url(../font/NotoSansKR-Medium.woff) format('woff');
+}
+
+@font-face {/*국문*/
+    font-family:NotoSans;
+    font-weight:800;
+    src:local(※), url(../font/NotoSansKR-Bold.woff) format('woff');
+}
+
+@font-face {/*영문*/
+    font-family:Roboto;
+    font-weight:100;
+    src:local(※), url(../font/Roboto-Regular.woff) format('woff');
+}
+
+@font-face {/*영문*/
+    font-family:Roboto;
+    font-weight:normal;
+    src:local(※), url(../font/Roboto-Medium.woff) format('woff');
+}
+
+@font-face {/*영문*/
+    font-family:Roboto;
+    font-weight:bold;
+    src:local(※), url(../font/Roboto-Bold.woff) format('woff');
+}

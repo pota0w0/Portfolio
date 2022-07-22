@@ -1,0 +1,27 @@
+/* 열간의 유동형그리드 처리 */
+
+/* pc */
+@media screen and (min-width: 1024px){
+    /* 컬럼을 최종적으로 3개로 나눠서 처리 */
+    /* 아래 숫자는 n/3로 처리된다고 보면 됨 */
+    /* 열간 좌우 여백(padding) 15px처리 */
+    .pcol01{ float: left; width: 33.33%; padding: 0 15px; box-sizing: border-box; }
+    .pcol02{ float: left; width: 50%; padding: 0 15px; box-sizing: border-box; }
+    .pcol03{ float: left; width: 100%; padding: 0 15px; box-sizing: border-box; }
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .tcol01{ float: left; width: 33.33%; padding: 0 15px; box-sizing: border-box; }
+    .tcol02{ float: left; width: 50%; padding: 0 15px; box-sizing: border-box; }
+    .tcol03{ float: left; width: 100%; padding: 0 15px; box-sizing: border-box; }
+}
+
+/* mobile */
+@media screen and (max-width:767px){
+    .mcol01{ float: left; width: 33.33%; padding: 0 15px; box-sizing: border-box; }
+    .mcol02{ float: left; width: 50%; padding: 0 15px; box-sizing: border-box; }
+    .mcol03{ float: left; width: 100%; padding: 0 15px; box-sizing: border-box; }
+}
+
